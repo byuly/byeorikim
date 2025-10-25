@@ -29,7 +29,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="min-h-screen py-20 px-4">
+    <section id="experience" className="min-h-screen pt-12 pb-0 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-block pixel-border bg-primary px-4 py-2 mb-4 retro-shadow">
