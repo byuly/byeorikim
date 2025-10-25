@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Star } from "lucide-react";
+import { Star, ChevronDown } from "lucide-react";
 
 interface ExperienceItem {
   role: string;
@@ -10,6 +10,11 @@ interface ExperienceItem {
 }
 
 const Experience = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   // Template experience - user can replace with their own
   const experiences: ExperienceItem[] = [
     {
@@ -29,7 +34,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="min-h-screen pt-12 pb-0 px-4">
+    <section id="experience" className="min-h-screen pt-12 pb-0 px-4 relative">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-block pixel-border bg-primary px-4 py-2 mb-4 retro-shadow">
@@ -84,6 +89,17 @@ const Experience = () => {
             </Card>
           ))}
         </div>
+      </div>
+
+      {/* Scroll Down Arrow to Projects */}
+      <div className="flex justify-center mt-8">
+        <button
+          onClick={() => scrollToSection("projects")}
+          className="animate-bounce"
+          aria-label="Scroll to projects"
+        >
+          <ChevronDown className="w-8 h-8 text-primary" />
+        </button>
       </div>
     </section>
   );

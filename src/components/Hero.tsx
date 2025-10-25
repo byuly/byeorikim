@@ -1,10 +1,28 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const [showUpArrow, setShowUpArrow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show up arrow when scrolled past the hero section
+      const heroHeight = window.innerHeight;
+      setShowUpArrow(window.scrollY > heroHeight * 0.5);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -41,32 +59,46 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="pixel-border retro-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all text-xs"
-              onClick={() => scrollToSection("projects")}
-            >
-              VIEW PROJECTS
-            </Button>
-            <Button 
-              size="lg" 
-              variant="secondary"
+            <Button
+              size="lg"
               className="pixel-border retro-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all text-xs"
               onClick={() => scrollToSection("experience")}
             >
               CHECK STATS
             </Button>
+            <Button
+              size="lg"
+              variant="secondary"
+              className="pixel-border retro-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all text-xs"
+              onClick={() => scrollToSection("projects")}
+            >
+              VIEW PROJECTS
+            </Button>
           </div>
         </div>
       </div>
-      
-      <button 
-        onClick={() => scrollToSection("experience")}
-        className="absolute bottom-8 animate-bounce"
-        aria-label="Scroll down"
-      >
-        <ChevronDown className="w-8 h-8 text-primary" />
-      </button>
+
+      {/* Scroll Down Arrow - visible when at top */}
+      {!showUpArrow && (
+        <button
+          onClick={() => scrollToSection("experience")}
+          className="absolute bottom-8 animate-bounce"
+          aria-label="Scroll down"
+        >
+          <ChevronDown className="w-8 h-8 text-primary" />
+        </button>
+      )}
+
+      {/* Scroll Up Arrow - visible when scrolled down */}
+      {showUpArrow && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 pixel-border bg-primary p-3 retro-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all animate-bounce"
+          aria-label="Scroll to top"
+        >
+          <ChevronUp className="w-6 h-6 text-primary-foreground" />
+        </button>
+      )}
     </section>
   );
 };
