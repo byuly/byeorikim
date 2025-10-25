@@ -15,26 +15,20 @@ const Hero = () => {
           <div className="mb-8 flex flex-col items-center">
             <div className="w-24 h-24 md:w-32 md:h-32 pixel-border bg-primary/20 mb-4 overflow-hidden">
               <img 
-                src="/placeholder.svg" 
+                src="/photo.svg" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
               />
             </div>
-            <h2 className="text-lg md:text-xl mb-2 text-foreground">YOUR NAME</h2>
+            <h2 className="text-lg md:text-xl mb-2 text-foreground">Byeori Kim</h2>
             <div className="flex flex-wrap gap-2 justify-center mb-4">
-              <span className="pixel-border bg-secondary px-3 py-1 text-xs text-secondary-foreground">🎮 GAMING</span>
-              <span className="pixel-border bg-secondary px-3 py-1 text-xs text-secondary-foreground">💻 CODING</span>
-              <span className="pixel-border bg-secondary px-3 py-1 text-xs text-secondary-foreground">🎨 DESIGN</span>
+              <span className="pixel-border bg-secondary px-3 py-1 text-xs text-secondary-foreground">🤓 SOFTWARE ENGINEER</span>
+              <span className="pixel-border bg-secondary px-3 py-1 text-xs text-secondary-foreground">📚 STUDENT</span>
             </div>
             <p className="text-xs md:text-sm text-muted-foreground max-w-md">
-              Add your personality description here. What makes you unique? What do you love doing?
-            </p>
-          </div>
+              i like backend. i like systems. i like data. maybe a little frontend. i'm also 10x developer with ai. but i can still code without ai.
 
-          <div className="mb-6">
-            <div className="inline-block pixel-border bg-primary px-4 py-2 mb-4">
-              <p className="text-primary-foreground text-xs md:text-sm">PLAYER ONE</p>
-            </div>
+            </p>
           </div>
           
           <h1 className="text-2xl md:text-4xl lg:text-5xl mb-6 text-foreground leading-relaxed">
@@ -42,8 +36,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xs md:text-sm leading-relaxed mb-8 text-muted-foreground max-w-2xl mx-auto">
-            Welcome to my digital arcade! I'm a developer who crafts experiences 
-            pixel by pixel. Explore my quests, power-ups, and achievements.
+            welcome to my personal arcade! i'm a developer who crafts for users. explore my quests, power-ups, and achievements.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

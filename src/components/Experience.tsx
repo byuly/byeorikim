@@ -13,25 +13,18 @@ const Experience = () => {
   // Template experience - user can replace with their own
   const experiences: ExperienceItem[] = [
     {
-      role: "SENIOR DEV",
-      company: "Tech Corp",
-      period: "2022 - PRESENT",
-      description: "Led development of scalable web applications. Implemented CI/CD pipelines and mentored junior developers. Increased team productivity by 40%.",
-      level: 5
+      company: "SOFTWARE ENGINEER INTERN",
+      role: "Royal Bank of Canada (RBC)",
+      period: "sep. - dec. 2025",
+      description: "currently an intern on the real-time payments team!",
+      level: 1
     },
     {
-      role: "FULL STACK DEV",
-      company: "Startup Inc",
-      period: "2020 - 2022",
-      description: "Built responsive web applications from scratch. Collaborated with designers and product managers. Shipped 15+ features that improved user engagement.",
-      level: 4
-    },
-    {
-      role: "JUNIOR DEV",
-      company: "Code Academy",
-      period: "2019 - 2020",
-      description: "Developed and maintained client websites. Fixed bugs and implemented new features. Gained experience in React, Node.js, and database design.",
-      level: 3
+      company: "SOFTWARE ENGINEER INTERN",
+      role: "SAP",
+      period: "jan. - aug. 2025",
+      description: "worked on the data acquisition team!",
+      level: 1
     }
   ];
 
@@ -43,7 +36,7 @@ const Experience = () => {
             <h2 className="text-primary-foreground text-sm md:text-base">ACHIEVEMENT LOG</h2>
           </div>
           <p className="text-xs md:text-sm text-muted-foreground mt-4">
-            Experience points earned through battles
+            experience points earned.
           </p>
         </div>
 

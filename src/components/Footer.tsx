@@ -19,7 +19,7 @@ const Footer = () => {
                 className="pixel-border retro-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
                 asChild
               >
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href="https://github.com/byuly" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github className="w-4 h-4" />
                 </a>
               </Button>
@@ -29,7 +29,7 @@ const Footer = () => {
                 className="pixel-border retro-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
                 asChild
               >
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/byeorik" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <Linkedin className="w-4 h-4" />
                 </a>
               </Button>
@@ -39,7 +39,7 @@ const Footer = () => {
                 className="pixel-border retro-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
                 asChild
               >
-                <a href="mailto:hello@example.com" aria-label="Email">
+                <a href="mailto:kimlbyeori@gmail.com" aria-label="Email">
                   <Mail className="w-4 h-4" />
                 </a>
               </Button>
@@ -47,13 +47,11 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">
-            <span>CRAFTED WITH</span>
-            <Heart className="w-3 h-3 fill-primary text-primary" />
-            <span>IN RETRO MODE</span>
+            <span>hire me</span>
           </div>
 
           <p className="text-xs text-muted-foreground">
-            © 2025 PLAYER ONE. ALL RIGHTS RESERVED.
+            © 2026.
           </p>
         </div>
       </div>
