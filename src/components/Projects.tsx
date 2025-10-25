@@ -4,7 +4,7 @@ import { Github } from "lucide-react";
 interface Project {
   title: string;
   description: string;
-  videoUrl: string;
+  videoUrl?: string;
   tags: string[];
   githubUrl?: string;
 }
@@ -15,56 +15,48 @@ const Projects = () => {
     {
       title: "Gomoku-Matched",
       description: "Gomoku Matched is a competitive, real-time strategy board game where two players face off to place five stones in a row on a grid. The game supports both human-vs-human matches and human-vs-AI matches, featuring machine learning-powered AI opponents with varying skill levels.",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       tags: ["Java", "SpringBoot", "Python", "Redis", "Apache Kafka", "Websocket", "PostgreSQL", "Vite"],
       githubUrl: "https://github.com/byuly/GomokuMatching"
     },
     {
       title: "URLer",
       description: "Urler is a full-stack web application for shortening long URLs and tracking their usage with real-time analytics. It provides a clean, intuitive interface for creating short links and monitoring their performance.",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       tags: ["Java", "SpringBoot", "Spring Security","Websocket", "PostgreSQL", "NextJS"],
       githubUrl: "https://github.com/byuly/Urler"
     },
     {
       title: "DearMe @ nwHacks",
       description: "Dear Me is a private, offline conversational AI that acts as your personal companion throughout the day. By running on a local LLM, speech models, and database, it ensures all your data belongs to yourself, for yourself!",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       tags: ["Python", "FastAPI", "Ollama", "NextJS", "Redis", "XTTS-V2"],
       githubUrl:"https://github.com/byuly/DearMe"
     },
     {
       title: "CharityBite.co",
       description: "Project models the operation of food charities to enable food donation and redistribution management. Designed and optimized complex SQL queries to manage 3NF-normalized Oracle database of 10+ interrelated tables. The overall aim of building this project was getting familiar with various relational database concepts, such as ER diagrams, normalization, SQL security, and SQL queries!",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       tags: ["HTML", "CSS", "JavaScript", "NodeJS", "Oracle Database"],
       githubUrl: "https://github.com/byuly/CharityBite.co"
     },
     {
       title: "Sleep Detector",
       description: "A real-time sleep detection system that monitors user posture and eye status using computer vision and machine learning. The system uses a trained CNN model with 28,709 images for emotion detection, combined with OpenCV and Mediapipe for live video processing and body posture analysis to provide instant feedback when drowsiness is detected.",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       tags: ["Python", "TensorFlow", "Keras", "OpenCV", "Mediapipe", "Threading"],
       githubUrl:"https://github.com/byuly/Sleep-Detector"
     },
-        {
+    {
       title: "Seul, the Therapy Bot",
       description: "An AI-powered therapy companion that provides mental health support through conversational AI. Built with Streamlit for an interactive web interface, leveraging RAG (Retrieval-Augmented Generation) architecture with ChromaDB for context-aware responses, and AWS Bedrock for serving advanced AI models to deliver personalized therapeutic conversations.",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       tags: ["Python", "Streamlit", "RAG", "ChromaDB"],
       githubUrl:"https://github.com/byuly/Seul-the-TherapyBot"
     },
     {
       title: "DALL-E Clone Website",
       description: "A full-stack web application built with the MERN stack that enables text-to-image generation using OpenAI's DALL-E 2 API. Features a REST API for handling text prompt submissions, image generation, and database storage integration with Cloudinary for efficient management of user prompts and generated images.",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       tags: ["JavaScript", "React", "Express", "MongoDB", "NodeJS"],
       githubUrl:"https://github.com/byuly/dall-e_clone"
     },
     {
       title: "Sneaker Collection",
       description: "Keep track of your favorite sneakers and don't get lost in your collection! A desktop application built with Java and Java Swing that helps sneaker enthusiasts organize and manage their collections. Developed with a focus on learning design patterns such as Singleton and implementing comprehensive unit testing.",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       tags: ["Java", "Java Swing", "Unit Testing"],
       githubUrl: "https://github.com/byuly/Sneaker-Collection-"
     }
@@ -105,15 +97,17 @@ const Projects = () => {
                   )}
                 </div>
 
-                <div className="aspect-video pixel-border bg-muted overflow-hidden">
-                  <iframe
-                    className="w-full h-full"
-                    src={project.videoUrl}
-                    title={project.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
+                {project.videoUrl && (
+                  <div className="aspect-video pixel-border bg-muted overflow-hidden">
+                    <iframe
+                      className="w-full h-full"
+                      src={project.videoUrl}
+                      title={project.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                )}
 
                 <p className="text-xs leading-relaxed text-muted-foreground">
                   {project.description}

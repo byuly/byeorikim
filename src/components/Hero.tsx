@@ -22,7 +22,8 @@ const Hero = () => {
             </div>
             <h2 className="text-lg md:text-xl mb-2 text-foreground">Byeori Kim</h2>
             <div className="flex flex-wrap gap-2 justify-center mb-4">
-              <span className="pixel-border bg-secondary px-3 py-1 text-xs text-secondary-foreground">🤓 SOFTWARE ENGINEER</span>
+              <span className="pixel-border bg-secondary px-3 py-1 text-xs text-secondary-foreground">👨🏻‍💻 SOFTWARE ENGINEER</span>
+              <span className="pixel-border bg-secondary px-3 py-1 text-xs text-secondary-foreground">🏢 UBC CS</span>
               <span className="pixel-border bg-secondary px-3 py-1 text-xs text-secondary-foreground">📚 STUDENT</span>
             </div>
             <p className="text-xs md:text-sm text-muted-foreground max-w-md">
