@@ -1,4 +1,4 @@
-# Retro Portfolio
+# Personal Website
 
 A 90s Nintendo-inspired personal portfolio website showcasing projects and experience!!
 
