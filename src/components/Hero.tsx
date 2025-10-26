@@ -32,9 +32,9 @@ const Hero = () => {
           {/* Profile Section */}
           <div className="mb-8 flex flex-col items-center">
             <div className="w-24 h-24 md:w-32 md:h-32 pixel-border bg-primary/20 mb-4 overflow-hidden">
-              <img 
-                src="/photo.png" 
-                alt="Profile" 
+              <img
+                src={`${import.meta.env.BASE_URL}photo.png`}
+                alt="Profile"
                 className="w-full h-full object-cover"
               />
             </div>
