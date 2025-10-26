@@ -65,14 +65,15 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 240 10% 8%;
-    --foreground: 0 0% 95%;
+    /* Discord-style greyish dark theme */
+    --background: 220 7% 23%; /* #36393f */
+    --foreground: 210 5% 87%; /* #dcddde */
 
-    --card: 240 8% 12%;
-    --card-foreground: 0 0% 95%;
+    --card: 223 7% 19%; /* #2f3136 */
+    --card-foreground: 210 5% 87%;
 
-    --popover: 240 8% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 223 7% 19%;
+    --popover-foreground: 210 5% 87%;
 
     --primary: 0 100% 45%;
     --primary-foreground: 0 0% 100%;
@@ -80,8 +81,8 @@ All colors MUST be HSL.
     --secondary: 185 80% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 5% 20%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 220 7% 15%; /* #202225 */
+    --muted-foreground: 210 5% 70%;
 
     --accent: 45 100% 50%;
     --accent-foreground: 0 0% 10%;
@@ -89,17 +90,17 @@ All colors MUST be HSL.
     --destructive: 0 85% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 80%;
-    --input: 0 0% 80%;
+    --border: 220 7% 30%;
+    --input: 220 7% 30%;
     --ring: 0 100% 45%;
-    
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
+
+    --sidebar-background: 223 7% 19%;
+    --sidebar-foreground: 210 5% 87%;
     --sidebar-primary: 224.3 76.3% 48%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-accent: 220 7% 15%;
+    --sidebar-accent-foreground: 210 5% 87%;
+    --sidebar-border: 220 7% 30%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
@@ -107,6 +108,9 @@ All colors MUST be HSL.
 @layer base {
   * {
     @apply border-border;
+    transition: background-color 300ms ease-in-out,
+                color 300ms ease-in-out,
+                border-color 300ms ease-in-out;
   }
 
   body {
