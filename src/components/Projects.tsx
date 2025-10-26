@@ -67,7 +67,7 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-block pixel-border bg-secondary px-4 py-2 mb-4 retro-shadow">
-            <h2 className="text-secondary-foreground text-sm md:text-base">LEVEL SELECT</h2>
+            <h2 className="text-secondary-foreground text-sm md:text-base">QUEST SELECT</h2>
           </div>
           <p className="text-xs md:text-sm text-muted-foreground mt-4">
             check out my quests! (my projects)
