@@ -7,6 +7,7 @@ interface ExperienceItem {
   period: string;
   description: string;
   level: number;
+  skills?: string[];
 }
 
 const Experience = () => {
@@ -22,14 +23,16 @@ const Experience = () => {
       role: "Royal Bank of Canada (RBC)",
       period: "sep. - dec. 2025",
       description: "currently an intern on the real-time payments team!",
-      level: 1
+      level: 1,
+      skills: ["Java", "Spring Boot", "IBM MQ", "Apache Kafka", "Testing"]
     },
     {
       company: "SOFTWARE ENGINEER INTERN",
       role: "SAP",
       period: "jan. - aug. 2025",
       description: "worked on the data acquisition team!",
-      level: 1
+      level: 1,
+      skills: ["Java", "Python", "Spring Framework", "Jenkins", "JavaScript", "Testing"]
     }
   ];
 
@@ -47,7 +50,7 @@ const Experience = () => {
 
         <div className="space-y-6">
           {experiences.map((exp, index) => (
-            <Card 
+            <Card
               key={index}
               className="pixel-border retro-shadow bg-card p-6 hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
             >
@@ -70,6 +73,19 @@ const Experience = () => {
                   {exp.description}
                 </p>
 
+                {exp.skills && exp.skills.length > 0 && (
+                  <div className="flex flex-wrap gap-2">
+                    {exp.skills.map((skill, skillIndex) => (
+                      <span
+                        key={skillIndex}
+                        className="pixel-border bg-muted px-2 py-1 text-xs"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
                 <div className="flex items-center gap-2">
                   <span className="text-xs text-muted-foreground">LEVEL:</span>
                   <div className="flex gap-1">
@@ -77,8 +93,8 @@ const Experience = () => {
                       <Star
                         key={i}
                         className={`w-4 h-4 ${
-                          i < exp.level 
-                            ? "fill-accent text-accent" 
+                          i < exp.level
+                            ? "fill-accent text-accent"
                             : "text-muted"
                         }`}
                       />
@@ -89,17 +105,17 @@ const Experience = () => {
             </Card>
           ))}
         </div>
-      </div>
 
-      {/* Scroll Down Arrow to Projects */}
-      <div className="flex justify-center mt-8">
-        <button
-          onClick={() => scrollToSection("projects")}
-          className="animate-bounce"
-          aria-label="Scroll to projects"
-        >
-          <ChevronDown className="w-8 h-8 text-primary" />
-        </button>
+        {/* Scroll Down Arrow to Projects */}
+        <div className="flex justify-center">
+          <button
+            onClick={() => scrollToSection("projects")}
+            className="animate-bounce"
+            aria-label="Scroll to projects"
+          >
+            <ChevronDown className="w-8 h-8 text-primary" />
+          </button>
+        </div>
       </div>
     </section>
   );

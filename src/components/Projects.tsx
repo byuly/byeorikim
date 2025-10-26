@@ -63,7 +63,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="min-h-screen -mt-12 pb-12 px-4">
+    <section id="projects" className="min-h-screen pt-12 pb-12 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <div className="inline-block pixel-border bg-secondary px-4 py-2 mb-4 retro-shadow">
