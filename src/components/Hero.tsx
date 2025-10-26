@@ -54,7 +54,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xs md:text-sm leading-relaxed mb-8 text-muted-foreground max-w-2xl mx-auto">
-            welcome to my personal arcade! i'm a developer who crafts for users. explore my quests, power-ups, and achievements.
+            welcome to my personal arcade! i'm a swe who crafts for users. explore my quests, power-ups, and experience.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
