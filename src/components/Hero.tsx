@@ -73,6 +73,14 @@ const Hero = () => {
             >
               VIEW PROJECTS
             </Button>
+            <Button
+              size="lg"
+              variant="secondary"
+              className="pixel-border retro-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all text-xs"
+              onClick={() => scrollToSection("contact")}
+            >
+              VIEW CONTACTS
+            </Button>
           </div>
         </div>
       </div>

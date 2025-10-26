@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
-    <footer className="py-12 px-4 border-t-4 border-border">
+    <footer id="contact" className="py-12 px-4 border-t-4 border-border">
       <div className="max-w-4xl mx-auto">
         <div className="text-center space-y-6">
           <div className="pixel-border bg-card p-6 inline-block retro-shadow">
