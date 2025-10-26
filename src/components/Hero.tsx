@@ -45,8 +45,7 @@ const Hero = () => {
               <span className="pixel-border bg-secondary px-3 py-1 text-xs text-secondary-foreground">📚 STUDENT</span>
             </div>
             <p className="text-xs md:text-sm text-muted-foreground max-w-md">
-              i like backend. i like systems. i like data. maybe a little frontend. i'm also 10x developer with ai. but i can still code without ai.
-
+              i like backend. i like systems. i like data. maybe a little frontend. with the trends, i can be 10x developer with AI. i'll say 1.5x developer without it. still cool.
             </p>
           </div>
           
