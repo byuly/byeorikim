@@ -15,13 +15,13 @@ const Projects = () => {
     {
       title: "Gomoku-Matched",
       description: "Gomoku Matched is a competitive, real-time strategy board game where two players face off to place five stones in a row on a grid. The game supports both human-vs-human matches and human-vs-AI matches, featuring machine learning-powered AI opponents with varying skill levels.",
-      tags: ["Java", "SpringBoot", "Python", "Redis", "Apache Kafka", "Websocket", "PostgreSQL", "Vite"],
+      tags: ["Java", "Spring Boot", "Python", "Redis", "Apache Kafka", "Websocket", "PostgreSQL", "Vite"],
       githubUrl: "https://github.com/byuly/GomokuMatching"
     },
     {
       title: "URLer",
       description: "Urler is a full-stack web application for shortening long URLs and tracking their usage with real-time analytics. It provides a clean, intuitive interface for creating short links and monitoring their performance.",
-      tags: ["Java", "SpringBoot", "Spring Security","Websocket", "PostgreSQL", "NextJS"],
+      tags: ["Java", "Spring Boot", "Spring Security","Websocket", "PostgreSQL", "NextJS"],
       githubUrl: "https://github.com/byuly/Urler"
     },
     {
