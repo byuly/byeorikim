@@ -20,9 +20,17 @@ const Experience = () => {
   const experiences: ExperienceItem[] = [
     {
       company: "SOFTWARE ENGINEER INTERN",
+      role: "Activision Blizzard",
+      period: "jan. 2026",
+      description: "an intern on the data platforms team!",
+      level: 1,
+      skills: ["Kotlin", "Distributed Systems", "Kubernetes", "Apache Kafka/Spark/Flink", "SQL"]
+    },
+    {
+      company: "SOFTWARE ENGINEER INTERN",
       role: "Royal Bank of Canada (RBC)",
       period: "sep. - dec. 2025",
-      description: "currently an intern on the real-time payments team!",
+      description: "worked on the real-time payments team! building receive functionality in the cloud.",
       level: 1,
       skills: ["Java", "Spring Boot", "IBM MQ", "Apache Kafka", "Testing"]
     },
@@ -30,7 +38,7 @@ const Experience = () => {
       company: "SOFTWARE ENGINEER INTERN",
       role: "SAP",
       period: "jan. - aug. 2025",
-      description: "worked on the data acquisition team!",
+      description: "worked on the data acquisition team! maintaining and building features for acquiring data from different data sources.",
       level: 1,
       skills: ["Java", "Python", "Spring Framework", "Jenkins", "JavaScript", "Testing"]
     }
