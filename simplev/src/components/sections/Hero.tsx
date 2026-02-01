@@ -21,9 +21,13 @@ const Hero = () => {
     <section className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="flex flex-col items-start"
+        animate={{ opacity: 1, y: 0, scale: [1, 1.015, 1] }}
+        transition={{
+          opacity: { duration: 0.8, ease: "easeOut" },
+          y: { duration: 0.8, ease: "easeOut" },
+          scale: { duration: 4, ease: "easeInOut", repeat: Infinity, repeatType: "loop" },
+        }}
+        className="flex flex-col items-start origin-left"
       >
         <motion.div
           className="cursor-default"

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { Sun, Moon } from "lucide-react";
 
 const navItems = [
   { name: "about", href: "#about" },
@@ -12,6 +13,16 @@ const navItems = [
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState("");
   const [isHovered, setIsHovered] = useState(false);
+  const [isDark, setIsDark] = useState(
+    () => document.documentElement.classList.contains("dark")
+  );
+
+  const toggleTheme = () => {
+    const next = !isDark;
+    setIsDark(next);
+    document.documentElement.classList.toggle("dark", next);
+    localStorage.setItem("theme", next ? "dark" : "light");
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,9 +79,9 @@ const Navigation = () => {
             >
               <motion.span
                 initial={{ opacity: 0, x: 10 }}
-                animate={{ 
-                  opacity: isHovered ? 1 : 0, 
-                  x: isHovered ? 0 : 10 
+                animate={{
+                  opacity: isHovered ? 1 : 0,
+                  x: isHovered ? 0 : 10,
                 }}
                 transition={{ duration: 0.2 }}
                 className={`text-xs font-light lowercase transition-colors ${
@@ -81,8 +92,8 @@ const Navigation = () => {
               </motion.span>
               <motion.div
                 className={`rounded-full transition-all duration-200 ${
-                  isActive 
-                    ? "w-2.5 h-2.5 bg-foreground" 
+                  isActive
+                    ? "w-2.5 h-2.5 bg-foreground"
                     : "w-1.5 h-1.5 bg-muted-foreground/50 group-hover:bg-foreground/70"
                 }`}
                 whileHover={{ scale: 1.2 }}
@@ -90,6 +101,24 @@ const Navigation = () => {
             </button>
           );
         })}
+
+        {/* Dark mode button aligned with dots */}
+<button
+  onClick={toggleTheme}
+  className="flex items-center justify-center w-1.5 h-1.5 mt-2 cursor-pointer"
+>
+  <motion.div
+    className="w-full h-full flex items-center justify-center"
+    whileHover={{ scale: 1.5 }}
+    whileTap={{ scale: 0.9 }}
+  >
+    {isDark ? (
+      <Sun className="w-2.0 h-2.0 text-muted-foreground/80" />
+    ) : (
+      <Moon className="w-2.0 h-2.0 text-muted-foreground/80" />
+    )}
+  </motion.div>
+</button>
       </div>
     </motion.nav>
   );
