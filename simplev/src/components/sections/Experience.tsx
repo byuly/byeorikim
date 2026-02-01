@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     role: "activision blizzard",
-    company: "software engineer intern in data engineering",
+    company: "software engineer intern with focus in data engineering",
     period: "jan. 2026",
     description: "an intern on the data platforms team.",
   },
