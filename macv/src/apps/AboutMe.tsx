@@ -46,18 +46,18 @@ const DEFAULT_CODE = `const byeori = {
 
   currently: {
     studying:  "CS @ UBC",
-    interning: "Activision Blizzard · Data Platform team",
+    interning: "Activision Blizzard · Data Platform team - Software/Data Engineer Intern",
   },
 
   previously: [
-    "RBC · Real-Time Payments team",
-    "SAP · Data Acquisition team",
+    "RBC · Real-Time Payments team - Software Engineer Intern",
+    "SAP · Data Acquisition team - Software Engineer Intern",
   ],
 
   skills: [
-    "Java", "Kotlin", "Go", "Rust", "Python",
+    "Java", "Kotlin", "Go", "Rust", "Python", "can learn super fast",
     "Spring Boot", "Apache Kafka", "Apache Flink", "Apache Spark",
-    "Postgres", "Redis", "Docker", "K8s",
+    "Postgres", "Redis", "Docker", "K8s", "AWS/GCP"
   ],
 
   links: {
@@ -69,7 +69,7 @@ const DEFAULT_CODE = `const byeori = {
   approach:    "scalable backend design + big-data systems",
   outsideWork: ["music", "running"],
 
-  // 10x dev with AI and coffee. but can still code without..
+  // 10x dev with AI and coffee :)))))))))))))))))))
   funFact: true,
 
 };`;
