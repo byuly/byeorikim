@@ -36,11 +36,14 @@ Jan–Aug 2025   SWE Intern @ SAP
 `.trim();
 
 const GIT_LOG = `
-* 3f9a1bc  feat: migrate Python registry to Spring Boot (11× perf)
-* a2b4c6d  fix: plug 300M/day PII pipeline leak with Flink dedup
-* 9e8f7c5  feat: zero-downtime GKE cutover at 400K msgs/sec
-* 7d6c5b4  chore: decommission entire DB (yes, the whole thing)
-* 4a3b2c1  feat: ship sbox — 7 domains, one Rust/Tauri app
+* 9f3a1bc  read: finished "Designing Data-Intensive Applications" 2nd ed (yes the whole thing)
+* b4c2e7d  read: finished "Kafka: The Definitive Guide" 2nd ed, kafka kafka
+* 7e1d4a2  learning: Flink, flinky flinky
+* 3c8f902  learning: Kafka internals — kafka kafka kafka
+* a1b5c3e  proficient: Java. i think in Java now
+* 2d9f1b4  proficient: Python. scripting, data stuff, backend, you name it
+* 8e3a7c1  learning: Rust — fighting the borrow checker daily, losing daily
+* 5b2d8f3  building: Go app. pretty refreshing
 * 1f2e3d4  init: hello world 🌍
 `.trim();
 
