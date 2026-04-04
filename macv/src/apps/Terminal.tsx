@@ -70,6 +70,7 @@ const OPEN_APPS: Record<string, AppID> = {
 export default function Terminal() {
   const [lines, setLines] = useState<Line[]>([
     { type: "output", text: "👋 hey! welcome to byeori's corner of the internet." },
+    { type: "output", text: "🖥️  tip: F11 (Windows) or ⌃⌘F (Mac) for full screen — much better experience" },
     { type: "output", text: "👇 click on the icons in the dock for byeori's super cool experience" },
     { type: "output", text: '💡 or type "help" to see what i can do' },
     { type: "output", text: "" },
