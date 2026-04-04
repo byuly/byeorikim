@@ -48,14 +48,14 @@ const GIT_LOG = `
 `.trim();
 
 const NEOFETCH = `
-        🐸           byeori@portfolio
-    .-"    "-.       ----------------
-   /  .--.  \\      OS: macv 1.0.0
-  | (      ) |      Shell: zsh
-   \\  '--'  /      University: UBC CS · GPA 3.8
-    '-....-'        Currently: Microsoft Activision
-                    Status: TN / J-1 eligible
-                    Interests: backend · distributed · big data
+     🐸           byeori@portfolio
+  .-"    "-.      ----------------
+ /  .--.  \\     OS: macv 1.0.0
+| (      ) |     Shell: zsh
+ \\  '--'  /     University: UBC CS
+  '-....-'       Currently: Activision Blizzard
+                 Status: TN / J-1 eligible
+                 Interests: backend · distributed · big data
 `.trim();
 
 const OPEN_APPS: Record<string, AppID> = {
