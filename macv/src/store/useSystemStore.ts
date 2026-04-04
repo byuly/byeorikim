@@ -6,17 +6,17 @@ export const wallpapers: Record<WallpaperID, { name: string; css: string; image?
   froggy: {
     name: "Froggy",
     css: "center / cover no-repeat",
-    image: "/froggy.jpeg",
+    image: `${import.meta.env.BASE_URL}froggy.jpeg`,
   },
   luffy: {
     name: "Luffy",
     css: "center / cover no-repeat",
-    image: "/luffy.gif",
+    image: `${import.meta.env.BASE_URL}luffy.gif`,
   },
   ay: {
     name: "Ay",
     css: "center / cover no-repeat",
-    image: "/ay.jpeg",
+    image: `${import.meta.env.BASE_URL}ay.jpeg`,
   },
 };
 

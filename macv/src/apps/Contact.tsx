@@ -79,7 +79,7 @@ export default function Contact() {
 
         {/* Single contact row */}
         <div className={`mx-2 flex items-center gap-2.5 px-2 py-2 rounded-lg ${dark ? "bg-[#0a84ff]" : "bg-[#0b84ff]"}`}>
-          <img src="/me.jpg" alt="Byeori Kim" className="w-8 h-8 rounded-full object-cover shrink-0" />
+          <img src={`${import.meta.env.BASE_URL}me.jpg`} alt="Byeori Kim" className="w-8 h-8 rounded-full object-cover shrink-0" />
           <div className="min-w-0">
             <div className="text-[13px] font-medium text-white truncate">Byeori Kim</div>
             <div className="text-[11px] text-white/70 truncate">Software Engineer</div>
@@ -92,7 +92,7 @@ export default function Contact() {
 
         {/* Avatar + name header */}
         <div className="flex flex-col items-center pt-6 pb-4 px-6">
-          <img src="/me.jpg" alt="Byeori Kim" className="w-20 h-20 rounded-full object-cover shadow-lg mb-3" />
+          <img src={`${import.meta.env.BASE_URL}me.jpg`} alt="Byeori Kim" className="w-20 h-20 rounded-full object-cover shadow-lg mb-3" />
           <h2 className={`text-xl font-semibold ${nameText}`}>Byeori Kim</h2>
           <p className={`text-[13px] ${subText} mt-0.5`}>Software Engineer</p>
 

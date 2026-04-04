@@ -23,7 +23,7 @@ const conversations: {
     period: "Jan. 2026 – Present",
     avatarColor: "#22c55e",
     initials: "AB",
-    logo: "/activision.jpeg",
+    logo: `${import.meta.env.BASE_URL}activision.jpeg`,
     tags: ["Spring Boot", "Flink", "Spark", "Kafka", "Kuberntes", "Kotlin", "Distributed Systems"],
     preview: "yeah we don't mess around lol",
     messages: [
@@ -44,7 +44,7 @@ const conversations: {
     period: "Sep. – Dec. 2025",
     avatarColor: "#3b82f6",
     initials: "RBC",
-    logo: "/rbc.jpeg",
+    logo: `${import.meta.env.BASE_URL}rbc.jpeg`,
     tags: ["Java", "Spring Boot", "Apache Camel", "Kafka", "Functional Programming"],
     preview: "exactly, no room for error 😅",
     messages: [
@@ -65,7 +65,7 @@ const conversations: {
     period: "Jan. – Aug. 2025",
     avatarColor: "#8b5cf6",
     initials: "SAP",
-    logo: "/sap.jpeg",
+    logo: `${import.meta.env.BASE_URL}sap.jpeg`,
     tags: ["Java", "Spring Boot", "Python", "Cypress", "Jenkins", "Distributed Systems"],
     preview: "exactly, very connector-brained 😄",
     messages: [

@@ -39,7 +39,7 @@ export default function BootScreen({ onComplete }: BootScreenProps) {
           transition={{ duration: 0.4 }}
           className="fixed inset-0 z-[200] bg-black flex flex-col items-center justify-center"
         >
-          <img src="/gojo.jpeg" alt="gojo" className="w-24 h-24 rounded-full object-cover mb-8" />
+          <img src={`${import.meta.env.BASE_URL}gojo.jpeg`} alt="gojo" className="w-24 h-24 rounded-full object-cover mb-8" />
           <div className="w-40 h-1 bg-white/20 rounded-full overflow-hidden">
             <motion.div
               className="h-full bg-white rounded-full"
