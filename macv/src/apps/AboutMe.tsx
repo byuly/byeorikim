@@ -55,9 +55,9 @@ const DEFAULT_CODE = `const byeori = {
   ],
 
   skills: [
-    "Java", "Kotlin", "Go", "Rust", "Python", "can learn super fast",
+    "Java", "Go", "Rust", "Python", "can learn super fast",
     "Spring Boot", "Apache Kafka", "Apache Flink", "Apache Spark",
-    "Postgres", "Redis", "Docker", "K8s", "AWS/GCP"
+    "Postgres", "Redis", "Docker", "Kubernetes", "AWS/GCP"
   ],
 
   links: {
